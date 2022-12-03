@@ -1,0 +1,45 @@
+.accountInfo {
+  margin-top: 50px;
+}
+.accountInfo .container {
+  padding: 50px;
+  max-width: 60%;
+  margin: auto;
+}
+.accountInfo .content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-start;
+}
+.accountInfo .left {
+  width: 150px;
+  position: relative;
+}
+.accountInfo .right {
+  width: calc(100% - 180px);
+  margin-left: 50px;
+}
+
+.accountInfo .left .img input {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+.accountInfo .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.accountInfo .right label {
+  font-size: 17px;
+  color: #000;
+  margin-bottom: 10px;
+  display: block;
+}

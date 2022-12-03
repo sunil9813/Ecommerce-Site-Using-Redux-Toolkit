@@ -1,0 +1,41 @@
+.singlePage {
+  padding: 80px 0;
+  background: #fff;
+}
+.singlePage .container {
+  display: flex;
+}
+.singlePage .right,
+.singlePage .left {
+  width: 50%;
+}
+.singlePage img {
+  width: 100%;
+  height: 100%;
+}
+.singlePage .right {
+  margin-left: 50px;
+}
+.singlePage h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.singlePage h3 {
+  margin: 20px 0;
+}
+.singlePage p {
+  margin: 20px 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.singlePage .cartContent .details .qty {
+  height: 50px;
+}
+
+.singlePage .add button {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.singlePage .icon {
+  font-size: 20px;
+}

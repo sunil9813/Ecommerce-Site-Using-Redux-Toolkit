@@ -1,13 +1,116 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #000;
+}
+h1,
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500;
+}
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+::placeholder {
+  font-size: 17px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: #5a5a5a;
+  font-size: 15px;
+}
+label {
+  color: #999;
+  font-size: 13px;
+}
+form,
+.boxItems {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 80px;
+  padding: 40px;
+}
+form span {
+  margin-bottom: 20px;
+}
+.accountInfo .right input,
+form input {
+  border: 1px solid #212121;
+  border-radius: 6px;
+  color: #212121;
+  font-size: 15px;
+  min-height: 44px;
+  padding: 0 20px;
+  transition: border-color 0.2s ease;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.button {
+  background: #212121;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  height: 48px;
+  line-height: 1;
+  padding: 15px 28px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+footer {
+  margin-top: 50px;
+  padding: 10px;
+}
+footer .icon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .grid3,
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
